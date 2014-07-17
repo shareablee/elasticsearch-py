@@ -38,10 +38,6 @@ class RequestsHttpConnection(Connection):
 
 
     def perform_request(self, method, url, params=None, body=None, timeout=None, ignore=()):
-        if timeout:
-            print "Timeout is ", timeout
-        else:
-            print "timeout is not set"
         url = self.base_url + url
         if params:
             url = '%s?%s' % (url, urlencode(params or {}))
