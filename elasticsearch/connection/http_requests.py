@@ -44,7 +44,7 @@ class RequestsHttpConnection(Connection):
 
         start = time.time()
         try:
-            response = self.session.request(method, url, data=body, timeout=timeout or self.timeout)
+            response = self.session.request(method, url, data=body, verify=False, timeout=timeout or self.timeout)
             duration = time.time() - start
             raw_data = response.text
         except (requests.ConnectionError, requests.Timeout) as e:
