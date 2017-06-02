@@ -15,7 +15,7 @@ def fetch_es_repo():
 
     repo_path = environ.get(
         'TEST_ES_REPO',
-        abspath(join(dirname(__file__), pardir, pardir, 'elasticsearch'))
+        abspath(join(dirname(__file__), pardir, pardir, 'elasticsearch5'))
     )
 
     # no repo
@@ -59,8 +59,8 @@ def run_all(argv=None):
     if argv is None:
         argv = [
             'nosetests', '--with-xunit',
-            '--with-xcoverage', '--cover-package=elasticsearch', '--cover-erase',
-            '--logging-filter=elasticsearch', '--logging-level=DEBUG',
+            '--with-xcoverage', '--cover-package=elasticsearch5', '--cover-erase',
+            '--logging-filter=elasticsearch5', '--logging-level=DEBUG',
             '--verbose',
         ]
 

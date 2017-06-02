@@ -6,7 +6,7 @@ from operator import methodcaller
 from ..exceptions import ElasticsearchException, TransportError
 from ..compat import map, string_types
 
-logger = logging.getLogger('elasticsearch.helpers')
+logger = logging.getLogger('elasticsearch5.helpers')
 
 class BulkIndexError(ElasticsearchException):
     @property

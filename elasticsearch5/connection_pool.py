@@ -10,7 +10,7 @@ except ImportError:
 
 from .exceptions import ImproperlyConfigured
 
-logger = logging.getLogger('elasticsearch')
+logger = logging.getLogger('elasticsearch5')
 
 class ConnectionSelector(object):
     """

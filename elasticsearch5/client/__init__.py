@@ -13,7 +13,7 @@ from .snapshot import SnapshotClient
 from .tasks import TasksClient
 from .utils import query_params, _make_path, SKIP_IN_PATH
 
-logger = logging.getLogger('elasticsearch')
+logger = logging.getLogger('elasticsearch5')
 
 def _normalize_hosts(hosts):
     """
