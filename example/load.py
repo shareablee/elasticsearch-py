@@ -9,8 +9,8 @@ import logging
 
 import git
 
-from elasticsearch import Elasticsearch
-from elasticsearch.helpers import bulk, streaming_bulk
+from elasticsearch_0_46 import Elasticsearch
+from elasticsearch_0_46.helpers import bulk, streaming_bulk
 
 def create_git_index(client, index):
     # create empty index

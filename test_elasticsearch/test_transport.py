@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 import time
 
-from elasticsearch.transport import Transport
-from elasticsearch.connection import Connection
-from elasticsearch.exceptions import ConnectionError
+from elasticsearch_0_46.transport import Transport
+from elasticsearch_0_46.connection import Connection
+from elasticsearch_0_46.exceptions import ConnectionError
 
 from .test_cases import TestCase
 

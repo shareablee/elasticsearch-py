@@ -5,7 +5,7 @@ try:
 except ImportError:
     pass # python 3, use builtin map
 
-from elasticsearch.exceptions import ElasticsearchException
+from elasticsearch_0_46.exceptions import ElasticsearchException
 
 class BulkIndexError(ElasticsearchException):
     @property

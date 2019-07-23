@@ -1,6 +1,6 @@
 import time
 
-from elasticsearch.connection_pool import ConnectionPool, RoundRobinSelector
+from elasticsearch_0_46.connection_pool import ConnectionPool, RoundRobinSelector
 
 from .test_cases import TestCase
 

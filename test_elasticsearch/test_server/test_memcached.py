@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-from elasticsearch import Elasticsearch, MemcachedConnection, NotFoundError
+from elasticsearch_0_46 import Elasticsearch, MemcachedConnection, NotFoundError
 
-from elasticsearch.transport import ADDRESS_RE
+from elasticsearch_0_46.transport import ADDRESS_RE
 
 from . import ElasticTestCase
 from ..test_cases import SkipTest

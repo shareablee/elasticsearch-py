@@ -5,8 +5,8 @@ import os
 
 import requests
 
-from elasticsearch import Elasticsearch
-from elasticsearch.exceptions import ConnectionError, NotFoundError
+from elasticsearch_0_46 import Elasticsearch
+from elasticsearch_0_46.exceptions import ConnectionError, NotFoundError
 
 from ..test_cases import TestCase, SkipTest
 
@@ -33,7 +33,7 @@ def get_client(**kwargs):
     # construct kwargs from the environment
     kw = {}
     if 'TEST_ES_CONNECTION' in os.environ:
-        from elasticsearch import connection
+        from elasticsearch_0_46 import connection
         kw['connection_class'] = getattr(connection, os.environ['TEST_ES_CONNECTION'])
     # update them with params
     kw.update(kwargs)

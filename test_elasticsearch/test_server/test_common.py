@@ -8,7 +8,7 @@ from os import walk, environ
 from os.path import exists, join, dirname, pardir
 import yaml
 
-from elasticsearch import TransportError
+from elasticsearch_0_46 import TransportError
 
 from ..test_cases import SkipTest
 from . import ElasticTestCase, _get_version

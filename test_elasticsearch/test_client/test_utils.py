@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from elasticsearch.client.utils import _make_path
+from elasticsearch_0_46.client.utils import _make_path
 
 from ..test_cases import TestCase, SkipTest
 

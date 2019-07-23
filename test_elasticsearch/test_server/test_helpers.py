@@ -1,4 +1,4 @@
-from elasticsearch import helpers
+from elasticsearch_0_46 import helpers
 
 from . import ElasticTestCase
 from ..test_cases import SkipTest

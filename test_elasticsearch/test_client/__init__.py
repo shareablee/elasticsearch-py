@@ -1,6 +1,6 @@
 from mock import patch
 
-from elasticsearch.client import _normalize_hosts, Elasticsearch
+from elasticsearch_0_46.client import _normalize_hosts, Elasticsearch
 
 from ..test_cases import TestCase, ElasticsearchTestCase
 
